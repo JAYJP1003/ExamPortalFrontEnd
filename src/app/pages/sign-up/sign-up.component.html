@@ -1,0 +1,42 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">  
+                <div class="container text-center">
+                        <img src="../../../assets/signupLogo.png" alt="">
+                </div>
+                <h1 class="text-center">Register Here !!!</h1>
+
+                <form class="p-5" (ngSubmit)="registeringUser()">
+                    <div class="form-group">
+                      <label for="username" class="mb-2">Username:</label>
+                      <input [(ngModel)]="user.userName" type="text" class="form-control mb-4" id="userName" placeholder="Enter username" name="userName">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="mb-2">Password:</label>
+                      <input [(ngModel)]="user.password" type="password" class="form-control mb-4" id="password" placeholder="Enter password" name="password">
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName" class="mb-2">First Name:</label>
+                      <input [(ngModel)]="user.firstName" type="text" class="form-control mb-4" id="firstName" placeholder="Enter first name" name="firstName">
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName" class="mb-2">Last Name:</label>
+                      <input [(ngModel)]="user.lastName" type="text" class="form-control mb-4" id="lastName" placeholder="Enter last name" name="lastName">
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="mb-2">Email:</label>
+                      <input [(ngModel)]="user.email" type="email" class="form-control mb-4" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone" class="mb-2">Phone:</label>
+                      <input [(ngModel)]="user.phone" type="text" class="form-control mb-4" id="phone" placeholder="Enter phone number" name="phone">
+                    </div>
+                    <button type="submit" class="btn btn-primary px-5 mx-auto">Submit</button>
+                  </form>
+                  
+            </div>
+        </div>
+    </div>
+
+
+  
