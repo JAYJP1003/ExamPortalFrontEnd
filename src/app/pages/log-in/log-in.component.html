@@ -1,1 +1,27 @@
-<p>log-in works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">  
+            <h1 class="p-2 text-center">Login Portal</h1>
+            <mat-card>
+            <form class="p-2">
+                <!--  Username -->
+                <div class="form-group">
+                    <label for="username" class="mb-2">Username:</label>
+                    <input required  type="text" class="form-control mb-3" id="userName" placeholder="Enter username" name="userName">
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-group">
+                    <label for="password" class="mb-2">Password:</label>
+                    <input required  type="password" class="form-control mb-3" id="password" placeholder="Enter password" name="password">
+                  </div>
+
+                  <div class="container text-center" >
+                    <button mat-raised-button color="primary">Login</button>
+                    <button mat-raised-button color="accent" class="ms-2">Reset</button>
+                  </div>
+            </form>
+            </mat-card>
+        </div>
+    </div>
+</div>
